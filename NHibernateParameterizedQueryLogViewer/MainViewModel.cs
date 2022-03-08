@@ -22,6 +22,21 @@ namespace NHibernateParameterizedQueryLogViewer
         {
             if (args.PropertyName != nameof(Input)) return;
 
+            try
+            {
+                EmbedQueryParametersInternal();
+            }
+            catch
+            {
+                var message = new StringBuilder();
+                message.AppendLine("Error. Please enter a query like the following:");
+                message.AppendLine("SELECT Id FROM Person WHERE Id = @p1;@p1 = 1 [Type: Int32 (0,0,0)];");
+                Output = message.ToString();
+            }
+        }
+
+        private void EmbedQueryParametersInternal()
+        {
             var parts = Input.Split(';');
             var query = parts[0];
             var parameters = LoadParametersFrom(parts[1]);
