@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHibernateParameterizedQueryLogViewer", "NHibernateParameterizedQueryLogViewer\NHibernateParameterizedQueryLogViewer.csproj", "{350180D7-16A2-4C8E-AD2A-AFBFF22A0E66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{350180D7-16A2-4C8E-AD2A-AFBFF22A0E66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{350180D7-16A2-4C8E-AD2A-AFBFF22A0E66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{350180D7-16A2-4C8E-AD2A-AFBFF22A0E66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{350180D7-16A2-4C8E-AD2A-AFBFF22A0E66}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63849A1B-A2F1-4856-9260-5B5C20767097}
+	EndGlobalSection
+EndGlobal
