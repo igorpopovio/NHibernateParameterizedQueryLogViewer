@@ -37,7 +37,7 @@ namespace NHibernateParameterizedQueryLogViewer
 
         private void EmbedQueryParametersInternal()
         {
-            var parts = Input.Split(';');
+            var parts = Input.Split(";\r\n".ToCharArray(), System.StringSplitOptions.RemoveEmptyEntries);
             var query = parts[0];
             var parameters = LoadParametersFrom(parts[1]);
 
