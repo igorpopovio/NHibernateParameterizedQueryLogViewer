@@ -1,2 +1,1 @@
-﻿SELECT this_.Id as y0_ FROM Person this_ WHERE Id = @p1 AND FirstName IN (@p2, @p3);
-@p1 = 1 [Type: Int32 (0:0:0)], @p2 = 'Bob' [Type: String (50:0:0)], @p3 = 'Joe' [Type: String (50:0:0)];
+﻿SELECT this_.Id as y0_ FROM Person this_ WHERE Id = @p1 AND FirstName IN (@p2, @p3);@p1 = 1 [Type: Int32 (0:0:0)], @p2 = 'Bob' [Type: String (50:0:0)], @p3 = 'Joe' [Type: String (50:0:0)];
