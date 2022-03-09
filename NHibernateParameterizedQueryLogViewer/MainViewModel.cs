@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
@@ -42,7 +43,7 @@ namespace NHibernateParameterizedQueryLogViewer
             var parameters = LoadParametersFrom(parts[1]);
 
             var finalQuery = new StringBuilder(query);
-            foreach (var (key, value) in parameters)
+            foreach (var (key, value) in parameters.Reverse())
                 finalQuery = finalQuery.Replace(key, value);
 
             Output = finalQuery.ToString();
